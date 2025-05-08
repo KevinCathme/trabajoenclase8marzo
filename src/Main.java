@@ -8,10 +8,9 @@ public class Main {
                     System.out.print("El mes de "+meses[i]);
                     System.out.print(" llovió "+lluvia[i]);
                     System.out.println(" L/m2");
+                    acumulada=acumulada+lluvia[i];
         }
-        for(int i=0;i<lluvia.length;i++){
-            acumulada=acumulada+lluvia[i];
-        }
-        System.out.print("La lluvia total acumulada es de "+acumulada+" L/m2");
+        System.out.println("La lluvia total acumulada es de "+acumulada+" L/m2");
+        System.out.println("El promedio de lluvia mensual es de "+(acumulada/12)+" L/m2");
     }
 }
